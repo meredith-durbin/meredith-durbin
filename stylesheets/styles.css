@@ -131,7 +131,7 @@ header ul a strong {
 section {
   width:500px;
   float:right;
-  padding-bottom:50px;
+  padding:50px;
   border-left:1px solid #444444;
 }
 
@@ -194,7 +194,7 @@ footer {
   }
   
   header {
-    padding:0;
+    padding:20px;
   }
   
   header ul, header p.view {
