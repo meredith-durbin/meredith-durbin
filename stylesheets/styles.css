@@ -83,13 +83,12 @@ img {
 header {
   width:300px;
   float:left;
-  position:fixed;
+  position:absolute;
   text-align:right;
   height:100%;
   top:20px;
   left:20px;
-  border-right:1px solid #e5e5e5;
-
+  border-right:1px solid #999999;
 }
 
 
@@ -287,7 +286,7 @@ transition:0.5s linear;
 color:#000000;
 background-color: #FFFFFF;
 }  
- 
+
 
  
 </style>
