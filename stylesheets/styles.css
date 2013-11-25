@@ -1,8 +1,7 @@
 body {
   padding:50px;
-  font-family:Helvetica, Arial, sans-serif;
-  font-size:12px;
-  color:#777;
+  font-family:'Helvetica Neue', Helvetica, sans-serif;font-size:12px;
+  color:#444;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -29,18 +28,6 @@ h2 {
 
 h3, h4, h5, h6 {
   color:#494949;
-}
-
-a {
-  color:#39c;
-  text-decoration:none;
-}
-
-a small {
-  font-size:11px;
-  color:#777;
-  margin-top:-0.6em;
-  display:block;
 }
 
 .wrapper {
@@ -93,10 +80,14 @@ img {
 }
 
 header {
-  width:270px;
+  width:300px;
   float:left;
   position:fixed;
   text-align:right;
+  height:100%;
+  top:20px;
+  left:20px;
+
 }
 
 header ul {
@@ -253,11 +244,6 @@ footer {
 }
 
 
-body {
-font-family:'Helvetica Neue', Helvetica, sans-serif;font-size:12px;
-background-color:#FFFFFF;
-}
- 
 a {
 text-decoration:none;
 color:#000000;
@@ -302,7 +288,6 @@ color:#000000;
 opacity:0.7;
 }
  
-
  
 .description {
 position:absolute;
