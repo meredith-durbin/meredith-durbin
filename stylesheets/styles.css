@@ -68,12 +68,12 @@ img {
 }
 
 header {
-  width:300px;
+  width:250px;
   float:left;
   position:absolute;
   text-align:right;
   height:100%;
-  padding:20px
+  padding:10px
 }
 
 
@@ -81,7 +81,6 @@ section {
   width:500px;
   float:right;
   padding-bottom:50px;
-  border-left:1px solid #444444;
 }
 
 small {
