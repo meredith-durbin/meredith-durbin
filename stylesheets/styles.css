@@ -87,7 +87,6 @@ header {
   text-align:right;
   height:100%;
   padding:20px
-  border-right:1px solid #999999;
 }
 
 
@@ -133,6 +132,7 @@ section {
   width:500px;
   float:right;
   padding-bottom:50px;
+  border-left:1px solid #444444;
 }
 
 small {
