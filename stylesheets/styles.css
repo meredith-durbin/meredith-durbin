@@ -20,6 +20,7 @@ h1, h2, h3 {
 
 h1 {
   font-size:28px;
+  font-weight:200;
 }
 
 h2 {
@@ -130,7 +131,7 @@ header ul a {
   font-size:11px;
   color:#999;
   display:block;
-  text-align:center;
+  text-align:right;
   padding-top:6px;
   height:40px;
 }
@@ -277,11 +278,11 @@ margin:0px 20px 0px 20px;
 margin-top:15px;
 margin-bottom:-10px;
 margin-left:-2px;
-font-family:'CMU Sans Serif', sans-serif;
+font-family: Helvetica, Arial, sans-serif;
 text-transform:lowercase;
-text-align:left;
+text-align:right;
 font-style:italic;
-font-size:11px;
+font-size:14px;
 line-height:22px;
 color: #555;
 text-decoration: none;
@@ -293,12 +294,12 @@ transition: 0.4s linear;
 margin:2px;
 opacity:0.95;
 padding:3px;
-background-color: {color:Links};
-color:{color:background};
+background-color: #FFFFFF;
+color:#000000;
 }    
  
 .nav a:hover{
-opacity:0.4;
+opacity:0.7;
 }
  
 
@@ -306,11 +307,11 @@ opacity:0.4;
 .description {
 position:absolute;
 top:290px;
-font-size:12px;
+font-size:14px;
 left:56px;
 width:150px;
 padding:20px;
-text-align:left;
+text-align:right;
 font-family:'CMU Serif', 'Euclid', 'Century Schoolbook', serif;
 line-height:15px;
 transition:0.5s linear;
