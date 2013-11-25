@@ -71,7 +71,7 @@ header {
   width:250px;
   float:left;
   position:absolute;
-  text-align:right;
+  text-align:center;
   height:100%;
   padding:10px
 }
@@ -80,6 +80,8 @@ header {
 section {
   width:500px;
   float:right;
+  border-left:1px solid;
+  padding-left:20px;
   padding-bottom:50px;
 }
 
@@ -179,13 +181,15 @@ margin:0px 20px 0px 20px;
 .nav {
 position:absolute;
 font-size:14px;
-top:400px;
-left:50px;
-width:150px;
+top:350px;
+left:5px;
+width:200px;
+border-top:1px solid #444444;
+border-bottom:1px solid #444444;
 padding:20px;
 font-family: Helvetica, Arial, sans-serif;
 text-transform:lowercase;
-text-align:right;
+text-align:center;
 font-style:italic;
 font-size:14px;
 line-height:22px;
