@@ -62,19 +62,6 @@ table {
   border-collapse:collapse;
 }
 
-th, td {
-  text-align:left;
-  padding:5px 10px;
-  border-bottom:1px solid #e5e5e5;
-}
-
-dt {
-  color:#444;
-}
-
-th {
-  color:#444;
-}
 
 img {
   max-width:100%;
@@ -193,6 +180,8 @@ margin:0px 20px 0px 20px;
 .nav {
 position:absolute;
 font-size:14px;
+top:400px;
+left:50px;
 width:150px;
 padding:20px;
 font-family: Helvetica, Arial, sans-serif;
@@ -218,24 +207,6 @@ color:#000000;
 .nav a:hover{
 opacity:0.7;
 }
- 
- 
-.description {
-position:absolute;
-top:290px;
-font-size:14px;
-left:56px;
-width:150px;
-padding:20px;
-text-align:right;
-font-family:'CMU Serif', 'Euclid', 'Century Schoolbook', serif;
-line-height:15px;
-transition:0.5s linear;
--moz-transition:0.5s linear;
-color:#000000;
-background-color: #FFFFFF;
-}  
-
 
  
 </style>
