@@ -86,7 +86,9 @@ section {
   height:100%;
   float:right;
   border-left:1px solid;
-  padding:50px;
+  padding-left:50px;
+  padding-top:50px;
+  padding-bottom:50px;
 }
 
 small {
@@ -186,8 +188,9 @@ margin:0px 20px 0px 20px;
 position:absolute;
 font-size:14px;
 top:350px;
-left:25px;
-width:175px;
+left: 50%;	
+margin-left: -60px;	
+width:180px;
 border-top:1px solid #444444;
 border-bottom:1px solid #444444;
 padding:20px;
