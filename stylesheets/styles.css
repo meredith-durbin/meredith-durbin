@@ -3,7 +3,6 @@ body {
   font-family:Helvetica, Arial, sans-serif;
   font-size:12px;
   color:#777;
-  font-weight:300;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -33,7 +32,6 @@ h3, h4, h5, h6 {
 
 a {
   color:#39c;
-  font-weight:400;
   text-decoration:none;
 }
 
@@ -83,7 +81,6 @@ th, td {
 
 dt {
   color:#444;
-  font-weight:700;
 }
 
 th {
@@ -140,7 +137,7 @@ header ul a {
 
 strong {
   color:#222;
-  font-weight:700;
+  font-weight:500;
 }
 
 header ul li + li {
@@ -253,3 +250,82 @@ footer {
     color:#444;
   }
 }
+
+
+body {
+font-family:'Helvetica Neue', Helvetica, sans-serif;font-size:12px;
+background-color:#FFFFFF;
+}
+ 
+a {
+text-decoration:none;
+color:#000000;
+opacity:0.8;
+-webkit-transition: all 0.4s linear;
+}
+
+a:hover{
+opacity:1;
+}
+ 
+
+blockquote {
+margin:0px 20px 0px 20px;
+}
+ 
+.nav {
+margin-top:15px;
+margin-bottom:-10px;
+margin-left:-2px;
+font-family:'CMU Sans Serif', sans-serif;
+text-transform:lowercase;
+text-align:left;
+font-style:italic;
+font-size:11px;
+line-height:22px;
+color: #555;
+text-decoration: none;
+}
+ 
+.nav a {
+transition: 0.4s linear;
+-moz-transition: 0.4s linear;
+margin:2px;
+opacity:0.95;
+padding:3px;
+background-color: {color:Links};
+color:{color:background};
+}    
+ 
+.nav a:hover{
+opacity:0.4;
+}
+ 
+
+ 
+.description {
+position:absolute;
+top:290px;
+font-size:12px;
+left:56px;
+width:150px;
+padding:20px;
+text-align:left;
+font-family:'CMU Serif', 'Euclid', 'Century Schoolbook', serif;
+line-height:15px;
+transition:0.5s linear;
+-moz-transition:0.5s linear;
+color:#000000;
+background-color: #FFFFFF;
+}  
+ 
+
+ 
+</style>
+<style type="text/css">{CustomCSS}</style>
+
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    
+</head>
