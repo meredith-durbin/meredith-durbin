@@ -74,7 +74,7 @@ img {
 }
 
 header {
-  width:250px;
+  width:260px;
   float:left;
   position:absolute;
   text-align:center;
@@ -214,6 +214,17 @@ color:#000000;
 .nav a:hover{
 opacity:0.7;
 }
+
+.photo{
+	float:left;
+	width:200px;
+	overflow:hidden;
+	border:1px solid #ccc;
+	}
+	
+.photo img{
+	margin:-20px -15px -40px -55px;
+	}
 
  
 </style>
