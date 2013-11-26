@@ -216,6 +216,8 @@ opacity:0.5;
 
 .portfolio{
 	float:left;
+	width:200px;
+	height:200px;
 	overflow:hidden;
 	border:1px solid #ccc;
 	}
