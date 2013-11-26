@@ -225,8 +225,8 @@ opacity:0.5;
 	}
 
 	.portfolio-caption{
-	width:220px;
-    height:167px;
+	width:150px;
+    height:150px;
     overflow:hidden;
     position:absolute;
     left:0px;
@@ -242,8 +242,8 @@ opacity:0.5;
 	
 	.portfolio-caption-text{
 	color:#FFFFFF;
-	width:220px;
-    height:167px;
+	width:150px;
+    height:150px;
     overflow:hidden;
     position:absolute;
     left:0px;
@@ -282,7 +282,7 @@ opacity:0.5;
 
     
     .caption{
-    width:250px;float:left;
+    width:150px;float:left;
     padding:15px 10px 0px 10px;
     }
     
