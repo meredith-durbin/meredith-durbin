@@ -2,7 +2,7 @@ body {
   padding:20px;
   font-family:'Helvetica Neue', Helvetica, sans-serif;
   font-size:13px;
-  font-weight:350;
+  font-weight:300;
   color:#444;
 }
 
@@ -23,7 +23,6 @@ h1, h2, h3 {
 
 h1 {
   font-size:28px;
-  font-weight:200;
 }
 
 h2 {
