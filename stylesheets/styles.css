@@ -1,6 +1,8 @@
 body {
   padding:20px;
-  font-family:'Helvetica Neue', Helvetica, sans-serif;font-size:12px;
+  font-family:'Helvetica Neue', Helvetica, sans-serif;
+  font-size:13px;
+  font-weight:350;
   color:#444;
 }
 
@@ -188,7 +190,7 @@ margin:0px 20px 0px 20px;
 .nav {
 position:absolute;
 font-size:14px;
-top:350px;
+top:50%;
 left: 50%;	
 margin-left: -55px;	
 width:150px;
