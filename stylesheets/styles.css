@@ -211,7 +211,7 @@ color:#000000;
 }    
  
 .nav a:hover{
-opacity:0.7;
+opacity:0.5;
 }
 
 .portfolio{
@@ -221,9 +221,11 @@ opacity:0.7;
 	overflow:hidden;
 	border:1px solid #ccc;
 	}
+	
 .portfolio img{
 	margin:-20px -15px -40px -55px;
-}
+	width:25%;
+	}
 	
 
  
