@@ -332,6 +332,31 @@ opacity:0.5;
 	opacity:.85;
 	filter:alpha(opacity=85);
 	}
+	.middle{
+    float:left;width:500px;margin-right:10px;
+    padding-top:25px;
+     }
+
+    
+    .caption{
+    width:200px;float:left;
+    padding:15px 10px 0px 10px;
+    }
+    
+    .photoset-caption{
+    	padding:5px 0px;
+    }
+    
+    .post #text {
+    float:right;
+	width: 200px;
+	height: 167px;
+	overflow: hidden;
+	font-size: 12px;
+	line-height: 18px;
+	text-transform: uppercase;
+	text-align: left;
+    }
 	
 	
 
