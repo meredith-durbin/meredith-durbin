@@ -181,6 +181,9 @@ a:hover{
 opacity:1;
 }
  
+a:visited{ 
+color:#666666;
+}
 
 blockquote {
 margin:0px 20px 0px 20px;
