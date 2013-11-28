@@ -77,14 +77,14 @@ header {
   float:left;
   position:absolute;
   text-align:center;
-  height:600px;
+  height:500px;
   padding:10px
 }
 
 
 section {
-  width:600px;
-  height:600px;
+  width:550px;
+  height:500px;
   float:right;
   border-left:1px solid;
   margin-left:50px;
