@@ -1,7 +1,7 @@
 body {
   padding:20px;
   font-family:'Helvetica Neue', Helvetica, sans-serif;
-  font-size:14px;
+  font-size:13px;
   font-weight:300;
   color:#444;
 }
@@ -83,10 +83,11 @@ header {
 
 
 section {
-  width:550px;
+  width:500px;
   height:500px;
   float:right;
   border-left:1px solid;
+  margin-right:100px;
   margin-left:50px;
   padding-left:50px;
   padding-top:50px;
