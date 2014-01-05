@@ -78,7 +78,7 @@ img {
 header {
   width:260px;
   float:left;
-  position:absolute;
+  position:fixed;
   text-align:center;
   height:500px;
   padding:10px
