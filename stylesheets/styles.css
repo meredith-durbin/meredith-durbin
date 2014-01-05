@@ -178,14 +178,11 @@ a {
 text-decoration:none;
 opacity:0.8;
 -webkit-transition: all 0.4s linear;
+color:#666666;
 }
 
 a:hover{
 opacity:1;
-}
- 
-a:visited{ 
-color:#666666;
 }
 
 blockquote {
