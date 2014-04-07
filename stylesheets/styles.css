@@ -225,13 +225,13 @@ pre code {
 .sectionwrapper {
 	position:absolute;
 	left:200px;
-	padding-top:20px;
 	padding-left:60px;
 	padding-bottom:80px;
 	padding-right:60px;
 }
 
 .section {
+	padding-top:20px;
 	position:relative;
 	padding-bottom:20px;
 }
