@@ -43,6 +43,7 @@ a > img {
 
 #about img, .menu img {
 	border-radius:1000px;
+	height:150px;
 	-webkit-transition: all 0.4s;	
 	   -moz-transition: all 0.4s;
 		 -o-transition: all 0.4s;
