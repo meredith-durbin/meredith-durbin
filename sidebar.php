@@ -34,7 +34,7 @@
     <div class="wrapper">
       <div class="menu">
 	 <center><h1 style="color:#fff;text-shadow:1px 1px 1px #000;">Meredith J. Durbin</h1>
-     <img src="sidebar_photo.jpg">
+     <img src="sidebar_photo.jpg" width=150px>
       <br><br>
         <div class="divider"></div>
         <div class="nav">
