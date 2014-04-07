@@ -19,8 +19,7 @@
 <meta name="MobileOptimized" content="320"/>   
 
     <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="../stylesheets/styles.css">
     <link href='http://fonts.googleapis.com/css?family=Jacques+Francois' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
@@ -33,7 +32,7 @@
     <div class="wrapper">
       <div class="menu">
 	 <center><h1 style="color:#fff;text-shadow:1px 1px 1px #000;">Meredith J. Durbin</h1>
-     <img src="sidebar_photo.jpg">
+     <img src="../sidebar_photo.jpg">
       <br><br>
         <div class="divider"></div>
         <div class="nav">
