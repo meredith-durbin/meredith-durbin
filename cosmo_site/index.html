@@ -32,7 +32,7 @@
     <div class="wrapper">
       <div class="menu">
 	 <center><h1 style="color:#fff;text-shadow:1px 1px 1px #000;">Meredith J. Durbin</h1>
-     <img src="../stylesheets/sidebar_photo.jpg" width=150px>
+     <a href="http://meredith-durbin.com"><img src="../stylesheets/sidebar_photo.jpg" width=150px></a>
       <br><br>
         <div class="divider"></div>
         <div class="nav">
