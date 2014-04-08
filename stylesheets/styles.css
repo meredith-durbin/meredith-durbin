@@ -36,7 +36,17 @@ a img {
 }
 
 a > img {
-	vertical-align: bottom;	
+	vertical-align: bottom;
+	opacity:1;	
+}
+
+a img:hover {
+	opacity:1;
+}
+
+a > img:hover {
+	vertical-align: bottom;
+	opacity:1;	
 }
 
 #about img, .menu img {
