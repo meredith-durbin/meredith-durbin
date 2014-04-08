@@ -17,6 +17,18 @@ body{
 	margin:0px 0px 0px 0px;
 }
 
+a {
+	text-decoration: none;
+	-webkit-transition: all 0.4s;	
+	   -moz-transition: all 0.4s;
+		 -o-transition: all 0.4s;
+		    transition: all 0.4s;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
 a img {
 	border: none;
 }
