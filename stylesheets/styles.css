@@ -27,9 +27,7 @@ a {
 		    transition: all 0.4s;
 }
 
-a:hover,
-a:active,
-a:focus {
+a:hover, a:active, a:focus {
 	opacity:0.8;
 }
 
@@ -52,6 +50,7 @@ a > img {
 
 #about img:hover, .menu img:hover {
 	border-radius:0px;
+	opacity:1;
 }
 
 strong {
