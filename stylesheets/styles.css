@@ -332,15 +332,25 @@ small {
 }
 
 .social {
+	position:relative;
 	width:50px;
-	height:50px;
+	height:70px;
 	background:transparent;
 	margin-left:10px;
 	margin-right:10px;
 	background-size:100% auto;
 	background-position:top center;
+	background-repeat:no-repeat;
 	display:inline-block;
 	overflow:hidden;
+}
+
+.social-content {
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	text-align:center;
+	z-index:0;
 }
 
 @media print, screen and (max-width: 960px) {
