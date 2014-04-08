@@ -192,13 +192,6 @@ pre code {
 	text-decoration: none;
 	letter-spacing:-0.5px;
 	text-shadow: 0px 0px 5px #fff;
-	-webkit-transition: all 0.6s;	
-	   -moz-transition: all 0.6s;
-		 -o-transition: all 0.6s;
-		    transition: all 0.6s;
-}
- 
-.nav a {
 	opacity:1;
 	color:#000;
 	-webkit-transition: all 0.6s;	
@@ -208,8 +201,7 @@ pre code {
 }
 
 .nav a:hover{
-	color:#fff;
-	text-shadow: 0px 0px 5px #000, 0px 0px 3px #000;
+	letter-spacing:2px;
 }
 
 .divider {
