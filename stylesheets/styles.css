@@ -179,6 +179,10 @@ pre code {
 	text-align:center;
 }
 
+.menu a:hover {
+	opacity:1;
+}
+
 .nav {
 	position:relative;
 	font-size:16px;
