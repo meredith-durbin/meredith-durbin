@@ -179,11 +179,11 @@ pre code {
 	text-align:center;
 }
 
-.menu a {
+.menu img a {
 	opacity:1;
 }
 
-.menu a:hover {
+.menu img a:hover {
 	opacity:1;
 }
 
@@ -213,6 +213,7 @@ pre code {
 
 .nav a:hover{
 	letter-spacing:2px;
+	opacity:1;
 }
 
 .divider {
