@@ -18,7 +18,7 @@
 <meta name="HandheldFriendly" content="true"/>
 <meta name="MobileOptimized" content="320"/>   
 
-    <link rel="icon" href="../favicon.ico">
+    <link rel="icon" href="../icon.ico">
     <link rel="stylesheet" href="../stylesheets/styles.css">
     <link href='http://fonts.googleapis.com/css?family=Jacques+Francois' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
