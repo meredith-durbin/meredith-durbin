@@ -205,11 +205,17 @@ pre code {
 .nav a {
 	color:#000;
 	opacity:1;
+	text-decoration:none;
+	-webkit-transition: all 0.6s;	
+	   -moz-transition: all 0.6s;
+		 -o-transition: all 0.6s;
+		    transition: all 0.6s;
 }
 
 .nav a:hover{
 	letter-spacing:2px;
 	opacity:1;
+	text-decoration:none;
 }
 
 .divider {
