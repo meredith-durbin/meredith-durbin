@@ -179,6 +179,10 @@ pre code {
 	text-align:center;
 }
 
+.menu a {
+	opacity:1;
+}
+
 .menu a:hover {
 	opacity:1;
 }
