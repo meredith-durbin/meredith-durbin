@@ -17,36 +17,12 @@ body{
 	margin:0px 0px 0px 0px;
 }
 
-a {
-	color:#a8615e;
-	opacity:1;
-	text-decoration: none;
-	-webkit-transition: all 0.4s;	
-	   -moz-transition: all 0.4s;
-		 -o-transition: all 0.4s;
-		    transition: all 0.4s;
-}
-
-a:hover, a:active, a:focus {
-	opacity:0.8;
-}
-
 a img {
 	border: none;
 }
 
 a > img {
 	vertical-align: bottom;
-	opacity:1;	
-}
-
-a img:hover {
-	opacity:1;
-}
-
-a > img:hover {
-	vertical-align: bottom;
-	opacity:1;	
 }
 
 #about img, .menu img {
@@ -60,7 +36,6 @@ a > img:hover {
 
 #about img:hover, .menu img:hover {
 	border-radius:0px;
-	opacity:1;
 }
 
 strong {
@@ -242,6 +217,21 @@ pre code {
 	padding-bottom:80px;
 	padding-right:60px;
 }
+
+.sectionwrapper a {
+	color:#a8615e;
+	opacity:1;
+	text-decoration: none;
+	-webkit-transition: all 0.4s;	
+	   -moz-transition: all 0.4s;
+		 -o-transition: all 0.4s;
+		    transition: all 0.4s;
+}
+
+.sectionwrapper a:hover, .sectionwrapper a:active, .sectionwrapper a:focus {
+	opacity:0.8;
+}
+
 
 .section {
 	padding-top:20px;
