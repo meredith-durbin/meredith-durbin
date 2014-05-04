@@ -5,7 +5,7 @@ var MMPhraseGenerator = {
 				this.assumption() + ", " + 
 				this.verb() + " " + 
 				this.thing1() + " " +
-				this.article() + " " +
+				this.blah() + " " +
 				this.thing2() + ".";
 	},
 
@@ -21,7 +21,7 @@ var MMPhraseGenerator = {
 	thing1			: function() {
 		return this.randomItemFrom(this.derive);
 	},
-	article			: function() {
+	blah			: function() {
 		return this.randomItemFrom(this.stuff);
 	},
 	thing2			: function() {
@@ -118,8 +118,8 @@ var MMPhraseGenerator = {
 			"",
 		],
 	stuff				: [
-			"the",
 			"its",
+			"the",
 			""
 	],
 	useless 			: [
