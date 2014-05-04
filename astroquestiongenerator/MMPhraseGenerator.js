@@ -119,7 +119,8 @@ var MMPhraseGenerator = {
 		],
 	stuff				: [
 			"the",
-			"its"
+			"its",
+			""
 	],
 	useless 			: [
 			"average orbital radius",
@@ -136,7 +137,7 @@ var MMPhraseGenerator = {
 			"angular momentum",
 			"focal length",
 			"surface gravity",
-			"Heisenberg's uncertainty principle",
+			"Heisenberg uncertainty principle",
 			"Stefan-Boltzmann equation",
 			"optical depth",
 			"Kelvin–Helmholtz timescale",
