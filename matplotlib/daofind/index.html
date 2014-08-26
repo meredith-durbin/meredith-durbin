@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../img/favicon.png">
+
+    <title>Plotting Star Coordinates | Meredith J. Durbin | STScI</title>
+
+    <link href="../../css/jumbotron-narrow.css" rel="stylesheet">
+    <link href="../../font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+    <link href="../../css/main.css" rel="stylesheet">
+	<link href="../../css/pygments.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="page-container">
+
+      <div class="jumbotron">
+        <div class="container">
+        <h3>Overplotting DAOFIND Coordinates On a FITS Image</h3>
+        </div>
+      </div>
+
+    <div class="navbar" style="margin-top:-16em;margin-bottom:11em;" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle"><!--  data-toggle="collapse" data-target=".navbar-collapse"> -->
+			<a href="../"><i class="fa fa-arrow-circle-left fa-lg fa-fw"></i></a>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">  <li><a href="../"><i class="fa fa-arrow-circle-left fa-lg"></i> Back</a></li>
+          </ul>
+        </div><!--/.navbar-collapse -->
+    </div>
+    
+<div class="main-side">
+
+Also viewable as an <a href="ipynb/">iPython notebook</a>.<br><br>
+
+What we need:
+<pre>
+<span class="kn">from</span> <span class="nn">astropy.io</span> <span class="kn">import</span> <span class="n">fits</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+</pre>
+Now we get the .fits file we want to work with:
+<pre>
+<span class="n">image</span> <span class="oeq">=</span> <span class="n">fits</span><span class="oeq">.</span><span class="nb">open</span><span class="p">(</span><span class="s">&#39;f606w_cts.fits&#39;</span><span class="p">)</span>
+<span class="n">data</span> <span class="oeq">=</span> <span class="n">image</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="oeq">.</span><span class="n">data</span>
+<span class="n">image</span><span class="oeq">.</span><span class="n">close</span><span class="p">()</span>
+</pre>
+Then the coordinates:
+<pre>
+<span class="n">f</span> <span class="oeq">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;f606w.phot&#39;</span><span class="p">)</span>
+<span class="n">coords</span> <span class="oeq">=</span> <span class="n">np</span><span class="oeq">.</span><span class="n">genfromtxt</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+<span class="n">f</span><span class="oeq">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="n">xc</span> <span class="oeq">=</span> <span class="p">[]</span>
+<span class="n">yc</span> <span class="oeq">=</span> <span class="p">[]</span>
+<span class="n">mag</span> <span class="oeq">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">coords</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">i</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">xc</span><span class="oeq">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">yc</span><span class="oeq">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+        <span class="n">mag</span><span class="oeq">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+</pre>
+And the plot:
+<pre>
+<span class="n">fig</span> <span class="oeq">=</span> <span class="n">plt</span><span class="oeq">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">ax</span> <span class="oeq">=</span> <span class="n">fig</span><span class="oeq">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+<span class="n">plt</span><span class="oeq">.</span><span class="n">set_cmap</span><span class="p">(</span><span class="s">&#39;bone&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="oeq">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">xc</span><span class="p">,</span> <span class="n">yc</span><span class="p">,</span> <span class="n">color</span><span class="oeq">=</span><span class="s">&#39;#00ff00&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="oeq">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">vmin</span><span class="oeq">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">vmax</span><span class="oeq">=</span><span class="mi">1000</span><span class="p">)</span>
+<span class="n">ax</span><span class="oeq">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">1100</span><span class="p">,</span><span class="mi">2500</span><span class="p">)</span>
+<span class="n">ax</span><span class="oeq">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">6900</span><span class="p">,</span><span class="mi">5500</span><span class="p">)</span>
+<span class="n">fig</span><span class="oeq">.</span><span class="n">tight_layout</span><span class="p">()</span>
+</pre>
+<img src="marked.jpg">
+
+Now we scale the marker size to the magnitude of stars:
+<pre>
+<span class="n">mag_scaled</span> <span class="oeq">=</span> <span class="n">np</span><span class="oeq">.</span><span class="n">mean</span><span class="p">(</span><span class="n">mag</span><span class="p">)</span><span class="o">/</span><span class="n">mag</span>
+<span class="n">aperture</span> <span class="oeq">=</span> <span class="mi">20</span><span class="o">**</span><span class="p">(</span><span class="n">mag_scaled</span><span class="o">**</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="n">fig</span> <span class="oeq">=</span> <span class="n">plt</span><span class="oeq">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">ax</span> <span class="oeq">=</span> <span class="n">fig</span><span class="oeq">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+<span class="n">plt</span><span class="oeq">.</span><span class="n">set_cmap</span><span class="p">(</span><span class="s">&#39;bone&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="oeq">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">xc</span><span class="p">,</span> <span class="n">yc</span><span class="p">,</span> <span class="n">color</span><span class="oeq">=</span><span class="s">&#39;#00ff00&#39;</span><span class="p">,</span> <span class="n">s</span><span class="oeq">=</span><span class="n">aperture</span><span class="p">,</span> <span class="n">facecolors</span><span class="oeq">=</span><span class="s">&#39;none&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="oeq">=</span><span class="mf">0.7</span><span class="p">)</span>
+<span class="n">ax</span><span class="oeq">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">vmin</span><span class="oeq">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">vmax</span><span class="oeq">=</span><span class="mi">1000</span><span class="p">)</span>
+<span class="n">ax</span><span class="oeq">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">1100</span><span class="p">,</span><span class="mi">2500</span><span class="p">)</span>
+<span class="n">ax</span><span class="oeq">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">6900</span><span class="p">,</span><span class="mi">5500</span><span class="p">)</span>
+<span class="n">fig</span><span class="oeq">.</span><span class="n">tight_layout</span><span class="p">()</span>
+</pre>
+<img src="marked_aperture.jpg">
+
+</div>
+
+      <footer>
+		<div class="footer">
+		<div class="imgbox"><img src="../../img/stsci_logo.png"></div>
+		<div class="address"><a href="http://www.stsci.edu/">Space Telescope Science Institute</a><br>3700 San Martin Drive<br>Baltimore, MD 21218</div>
+		</div>
+      </footer>
+
+    </div> <!-- /page-container -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="../../js/bootstrap.js"></script>
+  </body>
+</html>
