@@ -199,12 +199,17 @@ code, pre {
 }
 .main, .main-side {
 	position:relative;
-	margin:2em;
+	margin-left:2em;
+	margin-right:2em;
 	margin-bottom:1.5em;
 }
 @media (min-width:960px) {
-	.main, .main-side {
+	.main {
 		margin-top:1.5em;
+	}
+	.main-side {
+		margin-top:1.5em;
+		padding-top:1em;
 	}
 }
 @media (min-width:768px) and (max-width:959px) {
