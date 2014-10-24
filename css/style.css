@@ -248,7 +248,7 @@ table.matplotlib {
   max-width:700px;
 }
 
-@media (max-width:767px) {
+@media (max-width:359px) {
   #contact-right {
     margin-top:1.5em;
   }
