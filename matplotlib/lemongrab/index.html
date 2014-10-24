@@ -4,50 +4,34 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Meredith J. Durbin"/>
+    <meta name="description" content="Professional webpage"/>
     <link rel="icon" href="../../img/favicon.png">
-
-    <title>Lemongrab | Meredith J. Durbin | STScI</title>
-
-    <link href="../../css/jumbotron-narrow.css" rel="stylesheet">
-    <link href="../../font-awesome/css/font-awesome.css" rel="stylesheet">
+    <title>Lemongrab | Meredith J. Durbin</title>
     <link href="../../css/bootstrap.css" rel="stylesheet">
-    <link href="../../css/main.css" rel="stylesheet">
-	<link href="../../css/pygments.css" rel="stylesheet">
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-54214308-1', 'auto');
-	  ga('send', 'pageview');
-
-	</script>
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/pygments.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,200,700' rel='stylesheet' type='text/css'>
+    <link href="../../font-awesome/css/font-awesome.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
-
   <body>
 
-    <div class="page-container">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <ul class="nav navbar-nav pull-left">
+          	<li><a href="../"><i class="fa fa-fw fa-arrow-circle-left fa-lg"></i>&nbsp; Back</a></li>
+        </ul>
+    </nav>
 
-      <div class="jumbotron"> <div class="container"> <h3>How to Plot Lemongrab From Adventure Time</h3> </div>
-      </div>
 
-    <div class="navbar" style="margin-top:-16em;margin-bottom:11em;" role="navigation">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle">
-			<a href="../"><i class="fa fa-arrow-circle-left fa-lg fa-fw"></i></a>
-          </button>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-          	<li><a href="../"><i class="fa fa-arrow-circle-left fa-lg"></i> Back</a></li>
-          </ul>
-        </div><!--/.navbar-collapse -->
-    </div>
-
-<div class="main-side">
+    <div class="side-container" style="background-image:url('../../img/bg/hs-2012-01.jpg');">
+      <section class="light">
+        <div class="container">
+		  <h3>How to Plot Lemongrab From Adventure Time</h3>
 
 Also viewable as an <a href="ipynb/">iPython notebook</a>.<br><br>
 
@@ -78,7 +62,7 @@ Great. Now we give him a head:
 <span class="n">ax</span><span class="oeq">.</span><span class="n">plot</span><span class="p">(</span><span class="n">bump_x</span><span class="p">,</span> <span class="n">bump_y</span><span class="p">,</span> <span class="s">&#39;k&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="oeq">=</span><span class="mi">3</span><span class="p">)</span>
 <span class="n">ax</span><span class="oeq">.</span><span class="n">fill</span><span class="p">(</span><span class="n">bump_x</span><span class="p">,</span> <span class="n">bump_y</span><span class="p">,</span> <span class="n">facecolor</span><span class="oeq">=</span><span class="s">&#39;yellow&#39;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="oeq">=</span><span class="s">&#39;black&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="oeq">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">zorder</span><span class="oeq">=</span><span class="mi">1</span><span class="p">)</span>
 </pre>
-<img src="lemongraph_head.png"><br>
+<img class="main-lg-center" src="lemongraph_head.png"><br>
 Next, a nose:
 <pre>
 <span class="n">nose_x</span> <span class="oeq">=</span> <span class="n">np</span><span class="oeq">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">42</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span>
@@ -92,7 +76,7 @@ Next, a nose:
 <span class="n">ax</span><span class="oeq">.</span><span class="n">plot</span><span class="p">(</span><span class="n">nose_extra_x</span><span class="p">,</span> <span class="n">nose_extra_y</span><span class="p">,</span> <span class="s">&#39;k&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="oeq">=</span><span class="mi">2</span><span class="p">)</span>
 <span class="n">ax</span><span class="oeq">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">nose_x</span><span class="p">,</span> <span class="n">nose_top_y</span><span class="p">,</span> <span class="n">nose_bottom_y</span><span class="p">,</span> <span class="n">facecolor</span><span class="oeq">=</span><span class="s">&#39;yellow&#39;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="oeq">=</span><span class="s">&#39;black&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="oeq">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">zorder</span><span class="oeq">=</span><span class="mi">2</span><span class="p">)</span>
 </pre>
-<img src="lemongraph_nose.png"><br>
+<img class="main-lg-center" src="lemongraph_nose.png"><br>
 Next, eyes:
 <pre>
 <span class="c"># Whites</span>
@@ -121,7 +105,7 @@ Next, eyes:
 <span class="n">ax</span><span class="oeq">.</span><span class="n">plot</span><span class="p">(</span><span class="n">right_pupil_x</span><span class="p">,</span> <span class="n">right_pupil_y</span><span class="p">,</span> <span class="s">&#39;k&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="oeq">.</span><span class="n">fill</span><span class="p">(</span><span class="n">right_pupil_x</span><span class="p">,</span> <span class="n">right_pupil_y</span><span class="p">,</span> <span class="n">facecolor</span><span class="oeq">=</span><span class="s">&#39;black&#39;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="oeq">=</span><span class="s">&#39;black&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="oeq">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">zorder</span><span class="oeq">=</span><span class="mi">1</span><span class="p">)</span>
 </pre>
-<img src="lemongraph_eyes.png"><br>
+<img class="main-lg-center" src="lemongraph_eyes.png"><br>
 Mouth:
 <pre>
 <span class="n">mouth_x</span> <span class="oeq">=</span> <span class="n">np</span><span class="oeq">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mf">11.5</span><span class="p">,</span> <span class="mf">19.5</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span>
@@ -137,7 +121,7 @@ Mouth:
 <span class="n">ax</span><span class="oeq">.</span><span class="n">plot</span><span class="p">(</span><span class="n">mouth_fill_x</span><span class="p">,</span> <span class="n">mouth_fill_y</span><span class="p">,</span> <span class="s">&#39;k&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="oeq">=</span><span class="mi">2</span><span class="p">)</span>
 <span class="n">ax</span><span class="oeq">.</span><span class="n">fill</span><span class="p">(</span><span class="n">mouth_fill_x</span><span class="p">,</span> <span class="n">mouth_fill_y</span><span class="p">,</span> <span class="n">facecolor</span><span class="oeq">=</span><span class="s">&#39;#665f09&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="oeq">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">zorder</span><span class="oeq">=</span><span class="mi">1</span><span class="p">)</span>
 </pre>
-<img src="lemongraph_mouth.png"><br>
+<img class="main-lg-center" src="lemongraph_mouth.png"><br>
 Almost there! Now to give him a tongue and teeth:
 <pre>
 <span class="c"># Top teeth</span>
@@ -169,19 +153,17 @@ Almost there! Now to give him a tongue and teeth:
 <span class="n">ax</span><span class="oeq">.</span><span class="n">plot</span><span class="p">(</span><span class="n">teeth_bottom_x</span><span class="p">,</span> <span class="n">teeth_bottom_fill</span><span class="p">,</span> <span class="s">&#39;k&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="oeq">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">zorder</span><span class="oeq">=</span><span class="mi">4</span><span class="p">)</span>
 <span class="n">ax</span><span class="oeq">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">teeth_bottom_x</span><span class="p">,</span> <span class="n">teeth_bottom_y</span><span class="p">,</span> <span class="n">teeth_bottom_fill</span><span class="p">,</span> <span class="n">facecolor</span><span class="oeq">=</span><span class="s">&#39;white&#39;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="oeq">=</span><span class="s">&#39;black&#39;</span><span class="p">,</span><span class="n">linewidth</span><span class="oeq">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">zorder</span><span class="oeq">=</span><span class="mi">4</span><span class="p">)</span>
 </pre>
-<img src="lemongraph_final.png"><br>
+<img class="main-lg-center" src="lemongraph_final.png"><br>
 
 </div>
-
-      <footer>
-		<div class="footer">
-		<div class="imgbox"><img src="../../img/stsci_logo.png"></div>
-		<div class="address"><a href="http://www.stsci.edu/">Space Telescope Science Institute</a><br>3700 San Martin Drive<br>Baltimore, MD 21218</div>
-		</div>
-      </footer>
-
-    </div> <!-- /page-container -->
-
+        </section>
+        <div class="push"></div>
+      </div>
+    <footer>
+      <div class="container">
+        &copy; 2014 Meredith Durbin
+      </div>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="../../js/bootstrap.js"></script>

@@ -4,53 +4,34 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Meredith J. Durbin"/>
+    <meta name="description" content="Professional webpage"/>
     <link rel="icon" href="../../img/favicon.png">
-
-    <title>Plotting Star Coordinates | Meredith J. Durbin | STScI</title>
-
-    <link href="../../css/jumbotron-narrow.css" rel="stylesheet">
-    <link href="../../font-awesome/css/font-awesome.css" rel="stylesheet">
+    <title>DAOfind Coordinates| Meredith J. Durbin</title>
     <link href="../../css/bootstrap.css" rel="stylesheet">
-    <link href="../../css/main.css" rel="stylesheet">
-	<link href="../../css/pygments.css" rel="stylesheet">
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-54214308-1', 'auto');
-	  ga('send', 'pageview');
-
-	</script>
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/pygments.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,200,700' rel='stylesheet' type='text/css'>
+    <link href="../../font-awesome/css/font-awesome.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
-
   <body>
 
-    <div class="page-container">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <ul class="nav navbar-nav pull-left">
+          	<li><a href="../"><i class="fa fa-fw fa-arrow-circle-left fa-lg"></i>&nbsp; Back</a></li>
+        </ul>
+    </nav>
 
-      <div class="jumbotron">
+
+    <div class="side-container" style="background-image:url('../../img/bg/hs-2012-01.jpg');">
+      <section class="light">
         <div class="container">
-        <h3>Overplotting DAOFIND Coordinates On a FITS Image</h3>
-        </div>
-      </div>
-
-    <div class="navbar" style="margin-top:-16em;margin-bottom:11em;" role="navigation">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle">
-			<a href="../"><i class="fa fa-arrow-circle-left fa-lg fa-fw"></i></a>
-          </button>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-          	<li><a href="../"><i class="fa fa-arrow-circle-left fa-lg"></i> Back</a></li>
-          </ul>
-        </div><!--/.navbar-collapse -->
-    </div>
-    
-<div class="main-side">
+		  <h3>How to Overplot Coordinates on a FITS Image</h3>
 
 Also viewable as an <a href="ipynb/">iPython notebook</a>.<br><br>
 
@@ -92,7 +73,7 @@ And the plot:
 <span class="n">ax</span><span class="oeq">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">6900</span><span class="p">,</span><span class="mi">5500</span><span class="p">)</span>
 <span class="n">fig</span><span class="oeq">.</span><span class="n">tight_layout</span><span class="p">()</span>
 </pre>
-<img src="marked.jpg">
+<img class="main-lg-center" src="marked.jpg">
 
 Now we scale the marker size to the magnitude of stars:
 <pre>
@@ -108,19 +89,17 @@ Now we scale the marker size to the magnitude of stars:
 <span class="n">ax</span><span class="oeq">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">6900</span><span class="p">,</span><span class="mi">5500</span><span class="p">)</span>
 <span class="n">fig</span><span class="oeq">.</span><span class="n">tight_layout</span><span class="p">()</span>
 </pre>
-<img src="marked_aperture.jpg">
+<img class="main-lg-center" src="marked_aperture.jpg">
 
 </div>
-
-      <footer>
-		<div class="footer">
-		<div class="imgbox"><img src="../../img/stsci_logo.png"></div>
-		<div class="address"><a href="http://www.stsci.edu/">Space Telescope Science Institute</a><br>3700 San Martin Drive<br>Baltimore, MD 21218</div>
-		</div>
-      </footer>
-
-    </div> <!-- /page-container -->
-
+        </section>
+        <div class="push"></div>
+      </div>
+    <footer>
+      <div class="container">
+        &copy; 2014 Meredith Durbin
+      </div>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="../../js/bootstrap.js"></script>

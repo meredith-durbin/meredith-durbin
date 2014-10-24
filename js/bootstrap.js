@@ -14,21 +14,92 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
 
-$(document).ready(function() {
+$(window).on('hashchange', function() {
+    var hash = window.location.hash;
+	  $('.navbar-nav li').removeClass("active");
+    $("a[href='" + hash + "']").parent().addClass("active");
+});
+
+$(document).ready(function () {
     var hash = location.hash;
     if (hash !== '') {
         $(window).trigger('hashchange');
     }
     else {
-    	$("#home").show();
+    	$("a[href='#home']").parent().addClass("active");
     }
 });
 
-$(window).on("hashchange", function(e) {
-    $(location.hash.length > 1 ? location.hash : "#home").siblings().hide(600).end().show(600);
-	$('.navbar-nav li').removeClass("active");
-    $("a[href='" + window.location.hash + "']").parent().addClass("active");
+// Cache selectors
+var lastId,
+    topMenu = $(".navbar-nav"),
+    topMenuHeight = topMenu.outerHeight()+15,
+    // All list items
+    menuItems = topMenu.find("a"),
+    // Anchors corresponding to menu items
+    scrollItems = menuItems.map(function(){
+      var item = $($(this).attr("href"));
+      if (item.length) { return item; }
+    }),
+    noScrollAction = false;
+
+// foofy scrolling
+var $root = $('html, body');
+$('a[href*=#]').click(function() {
+    var windowHeight = $(window).height();
+    var href = $.attr(this, 'href');
+    var elHeight = $(href).outerHeight();
+    $root.animate({
+        scrollTop: $(href).offset().top + elHeight / 2 - windowHeight / 2 - 25
+    }, 500, function () {
+        window.location.hash = href;
+    });
+    return false;
 });
+
+// Highlight each nav item as you scroll past
+$(window).scroll(function(){
+   if(!noScrollAction){
+       var windowHeight = $(window).height();
+       var fromTop = $(this).scrollTop() + windowHeight / 2;
+       var cur = scrollItems.map(function(){
+         if ($(this).offset().top < fromTop - $(this).outerHeight() / 2 + 28)
+           return this;
+       });
+       cur = cur[cur.length-1];
+       var id = cur && cur.length ? cur[0].id : "";
+       
+       if (lastId !== id) {
+           lastId = id;
+           // Set/remove active class
+           menuItems
+             .parent().removeClass("active")
+             .end().filter("[href=#"+id+"]").parent().addClass("active");
+       }
+   }    
+});
+
+function setToggle() {
+	$("#portfolio-click").click(function() {
+		if ($("#portfolio-click").text() == "Show portfolio") {
+		$("#portfolio-click").text("Hide portfolio");
+		$("#portfolio").show();
+	}
+	else {
+		$("#portfolio-click").text("Show portfolio");
+		$("#portfolio").hide();		
+	}
+	});
+};
+
+function evalToggle() {
+    if ($(window).width() < 480) {
+        setToggle(); }
+    else {
+        $("#portfolio").show(); }
+};
+$(window).resize(evalToggle);
+evalToggle();
 
 +function ($) {
   'use strict';
