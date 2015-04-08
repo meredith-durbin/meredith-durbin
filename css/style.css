@@ -198,11 +198,11 @@ section {
 }
 
 .light img {
-  border:5px solid #914329;  
+  border:3px solid #914329;  
 }
 
 .dark img {
-  border:5px solid #F3DAC1;
+  border:3px solid #F3DAC1;
 }
 
 table.intro {
@@ -277,7 +277,7 @@ table.matplotlib {
   height:4em;
   background-color:#EEECE5;
   margin:0 5px 5px 5px;
-  border:5px solid #EEECE5;
+  border:3px solid #EEECE5;
   width:170px;
 }
 .col-pf-centered a {
@@ -304,7 +304,7 @@ table.matplotlib {
 .demo {
 	display:block;
 	position:relative;
-	border:5px solid #914329;
+	border:3px solid #914329;
 	width:calc(100%-4em);
 	padding:0;
 	margin:1em 2em;

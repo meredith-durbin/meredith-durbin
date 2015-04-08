@@ -3,7 +3,7 @@
 .err { border: 1px solid #FF0000 } /* Error */
 .k { color: #008000; font-weight: bold } /* Keyword */
 .oeq { color: #666666 } /* Operator = or . */
-.o { color: #AA22FF } /* Other operator */
+.o { color: #333333 } /* Other operator */
 .cm { color: #408080; font-style: italic } /* Comment.Multiline */
 .cp { color: #BC7A00 } /* Comment.Preproc */
 .c1 { color: #408080; font-style: italic } /* Comment.Single */
