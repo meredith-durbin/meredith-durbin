@@ -39,7 +39,7 @@
 
 <p>What we need to get started:</p>
 
-<pre><span class="c"># setup notebook + import modules</span>
+<pre><span class="c"># setup notebook + import packages</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
@@ -65,7 +65,7 @@
 <span class="n">f3</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre>
 
-<p>It's always a good idea to look at your images to figure out their color scales beforehand; this can also be done in DS9, but for example's sake I've done it in Matplotlib here.</p>
+<p>It's always a good idea to look at your images to figure out how best to scale their color values beforehand; this can also be done in DS9, but for example's sake I've done it in Matplotlib here; note the vmin and vmax arguments for each image.</p>
 
 <pre><span class="c"># quickly set up figure + subplots</span>
 <span class="c"># this way is easier than creating a separate figure object for each image</span>
@@ -83,7 +83,7 @@
 </pre>
 <img class="main-med-center" src="filter_subplots.jpg">
 <br>
-<p>Now we need a function to normalize each image to the same color scale. For more advanced options, including square root, log, and arsinh scales, check out <a href="http://www.astrobetter.com/wiki/tiki-index.php?page=RGB+Images+with+matplotlib">img_scale.py</a>.</p>
+<p>Now we need a function to normalize each image to the same scale (0 to 1). For more advanced options, including square root, log, and arsinh scales, check out <a href="http://www.astrobetter.com/wiki/tiki-index.php?page=RGB+Images+with+matplotlib">img_scale.py</a>.</p>
 
 <pre><span class="c"># scale images so that all image values are from 0 to 1</span>
 <span class="k">def</span> <span class="nf">scale_img</span><span class="p">(</span><span class="n">input_data</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
@@ -106,11 +106,11 @@
     <span class="k">return</span> <span class="n">img_data</span>
 </pre>
 
-<p>We can now scale each image and combine them into one three-dimensional array:</p>
+<p>We can now scale each image and combine them into one three-dimensional array, where the third dimension is RGB color:</p>
 
 <pre><span class="c"># make individual color images</span>
 <span class="n">blue</span> <span class="o">=</span> <span class="n">scale_img</span><span class="p">(</span><span class="n">data_502</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=-</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mf">0.05</span><span class="p">)</span>
-<span class="n">green</span> <span class="o">=</span> <span class="n">scale_img</span><span class="p">(</span><span class="n">data_657</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=-</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mf">0.47</span><span class="p">)</span>
+<span class="n">green</span> <span class="o">=</span> <span class="n">scale_img</span><span class="p">(</span><span class="n">data_657</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=-</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
 <span class="n">red</span> <span class="o">=</span> <span class="n">scale_img</span><span class="p">(</span><span class="n">data_673</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=-</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mf">0.05</span><span class="p">)</span>
 
 <span class="c"># put together individual images to make tricolor image</span>
@@ -123,13 +123,13 @@
 <br><br>
 <p>Let's look at the results!</p>
 
-<pre><span class="c"># plot tri-color image</span>
+<pre><span class="c"># create figure object and set size to 7x7 inches</span>
 <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">7</span><span class="p">))</span>
+<span class="c"># display the image; no keyword arguments are necessary this time</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">colorimage</span><span class="p">)</span>
 <span class="c"># different way of removing ticks</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">([])</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">([])</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
 </pre>
 
 <img class="main-lg-center" src="tricolor.jpg">
