@@ -15,6 +15,10 @@ img {
   height:auto;
 }
 
+ul li {
+  padding-top:0.4em;
+}
+
 .navbar {
   background:#1E313A;
   border-bottom:1px solid #914329;
