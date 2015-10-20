@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Meredith J. Durbin"/>
+    <meta name="description" content="Meredith J. Durbin's homepage"/>
+    <meta name="keywords" content="Meredith,Durbin,STScI,WFC3,RIA"/>
+    <link rel="icon" href="{{ site.baseurl }}/img/favicon.png">
+    <title>{{ page.title }}</title>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,200,700' rel='stylesheet' type='text/css'>
+    <link href="{{ site.baseurl }}/css/bootstrap.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/css/style.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      {{ content }}
+
+    <footer>
+      <div class="container">
+        &copy; 2015 Meredith Durbin
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
+    <script src="{{ site.baseurl }}/js/scripts.js"></script>
+    <script>
+      if((navigator.userAgent.match(/iPhone/i))
+        || (navigator.userAgent.match(/iPod/i))
+        || (navigator.userAgent.match(/iPad/i))){
+      $('.section-container').css('background-attachment', 'scroll');
+      $('.section-container').css('height', 'calc(100% + 5em)');
+      }
+    </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-54214308-1', 'auto');
+      ga('require', 'displayfeatures');
+      ga('send', 'pageview');
+
+   </script>
+  </body>
+</html>

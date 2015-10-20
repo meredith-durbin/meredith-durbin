@@ -2,7 +2,7 @@ body, html {
   width:100%;
   height:100%;
   margin:0;
-  padding:25px 0 0 0;
+  padding:0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -17,6 +17,16 @@ img {
 
 ul li {
   padding-top:0.4em;
+}
+
+div[class$="-6"] ul {
+  margin-left:0;
+  padding-left:0.5em;
+}
+
+div[class$="-6"] ul ul {
+  margin-left:0.5em;
+  padding-left:0.5em;
 }
 
 .navbar {
@@ -63,14 +73,14 @@ ul li {
 
 section {
   padding: 2em 0;
+  position:relative;
 }
 
 .section-container {
   width:100%;
-  height:100%;
+  height:100vh;
   overflow:hidden;
   position:relative;
-  top:0;
   background-repeat:no-repeat;
   background-position:center center;
   background-attachment:fixed;
@@ -82,7 +92,6 @@ section {
 }
 
 .section-container section {
-  position:relative;
   top:50%;
   transform:translateY(-50%);
   -webkit-transform:translateY(-50%);
