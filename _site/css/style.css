@@ -15,20 +15,6 @@ img {
   height:auto;
 }
 
-ul li {
-  padding-top:0.4em;
-}
-
-div[class$="-6"] ul {
-  margin-left:0;
-  padding-left:0.5em;
-}
-
-div[class$="-6"] ul ul {
-  margin-left:0.5em;
-  padding-left:0.5em;
-}
-
 .navbar {
   background:#1E313A;
   border-bottom:1px solid #914329;
@@ -36,11 +22,10 @@ div[class$="-6"] ul ul {
 
 @media (min-width:768px) {
   .navbar-inverse .navbar-nav li {
-    margin:0.5em 0;
+    margin:0.5em 0 0;
     border-left:1px solid #914329;
   }
   .navbar-inverse .navbar-nav li:first-child {
-    margin:0.5em 0;
     border-left:none;
   }
   .navbar-inverse .navbar-nav li:last-child {
@@ -62,13 +47,14 @@ div[class$="-6"] ul ul {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
-.navbar-inverse .navbar-nav li a:hover, .navbar-inverse .navbar-nav li a:focus {
-  color:#F3DAC1;
-}
-
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover {
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:active {
   color: #F3DAC1;
   background: transparent;
+}
+
+.navbar-inverse .navbar-nav li a:hover, .navbar-inverse .navbar-nav li a:focus, .navbar-inverse .navbar-nav li a:active {
+  color:#F3DAC1;
 }
 
 section {
@@ -81,6 +67,7 @@ section {
   height:100vh;
   overflow:hidden;
   position:relative;
+  top:0;
   background-repeat:no-repeat;
   background-position:center center;
   background-attachment:fixed;
@@ -98,6 +85,21 @@ section {
   -moz-transform:translateY(-50%);
   -o-transform:translateY(-50%);
   -ms-transform:translateY(-50%);
+}
+
+section ul {
+  margin-left:0;
+  padding-left:0.5em;
+  margin-right:1em;
+}
+
+section ul ul {
+  margin-left:0.5em;
+  padding-left:0.5em;
+}
+
+section ul li {
+  padding-top:0.4em;
 }
 
 .side-container {
@@ -322,6 +324,7 @@ table.matplotlib {
 	padding:0;
 	margin:1em 2em;
 }
+
 @media (max-width:479px) {
 	.demo {
 		padding-top:12em;
@@ -343,7 +346,7 @@ table.matplotlib {
 	}
  }
 
- .demo p {
+.demo p {
 	display: inline-block;
 	position:absolute;
 	left: 50%;
