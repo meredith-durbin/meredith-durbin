@@ -45,6 +45,8 @@ img {
   padding:8px 1em 0.5em 1em;
   font-weight:normal;
   -webkit-font-smoothing: subpixel-antialiased;
+  border:none!important;
+  outline:none!important;
 }
 
 .navbar-inverse .navbar-nav > .active > a,
