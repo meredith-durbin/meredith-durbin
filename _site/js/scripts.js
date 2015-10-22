@@ -2,7 +2,6 @@ $(document).ready(function() {
   $('nav a[href^="#"]').click(function(e) { 
     e.preventDefault();
     var el = $( e.target.getAttribute('href') );
-    var hash = this.hash;
     var navHeight = $('nav').height();
     var elOffset = el.offset().top;
     var elHeight = el.height();
@@ -16,9 +15,7 @@ $(document).ready(function() {
       offset = elOffset - navHeight;
     }
     var speed = 700;
-    $('html, body').animate({scrollTop:offset}, speed, function (){
-              location.hash = hash;
-          });
+    $('html, body').animate({scrollTop:offset}, speed);
     return false;
   });
 });
@@ -44,12 +41,6 @@ $(document).ready(function () {
     else {
       $("a[href='#home']").parent().addClass("active");
     }
-});
-
-$(window).on('hashchange', function() {
-    var hash = window.location.hash;
-    $('.navbar-nav li').removeClass("active");
-    $("a[href='" + hash + "']").parent().addClass("active");
 });
 
 // Highlight each nav item as you scroll past
@@ -96,3 +87,14 @@ function evalToggle() {
 };
 $(window).resize(evalToggle);
 evalToggle();
+
+if((navigator.userAgent.match(/iPhone/i))
+  || (navigator.userAgent.match(/iPod/i))
+  || (navigator.userAgent.match(/iPad/i))){
+  $('section-container').each( function () {
+    var sectHeight = $(this).children().outerHeight();
+    $(this).css('height', sectHeight)
+  });
+  $('.section-container').css('background-attachment', 'scroll');
+}
+
