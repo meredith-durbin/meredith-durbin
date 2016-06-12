@@ -9,16 +9,11 @@
     <meta name="keywords" content="Meredith,Durbin,STScI,WFC3,RIA"/>
     <link rel="icon" href="{{ site.baseurl }}/img/favicon.png">
     <title>{{ page.title }}</title>
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,200,700,400italic' rel='stylesheet' type='text/css'>
     <link href="{{ site.baseurl }}/css/normalize.css" rel="stylesheet">
     <link href="{{ site.baseurl }}/css/skeleton.css" rel="stylesheet">
     <link href="{{ site.baseurl }}/css/custom.css" rel="stylesheet">
-<!--     <link href="{{ site.baseurl }}/font-awesome/css/font-awesome.css" rel="stylesheet">
- -->    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link href="{{ site.baseurl }}/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body>
 
@@ -26,21 +21,16 @@
         <label for="show-menu" class="show-menu">Menu</label>
         <input type="checkbox" id="show-menu" role="button">
         <ul id="menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Research</a></li>
-          <li><a href="#">CV</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/research/">Research</a></li>
+          <li><a href="/cv/">CV</a></li>
+          <!--<li><a href="/about/">About</a></li>-->
+          <li><a href="/projects/">Projects</a></li>
         </ul>
       </nav>
 
         {{ content }}
 
-    <!-- <footer>
-      <div class="container">
-        &copy; 2015 Meredith Durbin
-      </div>
-    </footer> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
     <script src="{{ site.baseurl }}/js/scripts.js"></script>
     <script>
