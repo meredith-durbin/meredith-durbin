@@ -8,7 +8,9 @@ html, body {
 hr {
   margin:0 0 0.8em 0;
 }
-
+.center {
+  text-align:center;
+}
 .background-full, .background-third {
   position:relative;
   top:0;
@@ -96,11 +98,17 @@ nav a:hover, .banner a:hover {
   text-indent: -1em;
 } 
 
-table.contact {
-  margin:0 auto;
+div.contact {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display:flex;
+  -webkit-justify-content:center;
+  justify-content:center;
 }
-table.contact td {
-  padding:0 0.5em;
+div.contact a {
+  margin:0 0.5em;
 }
 .small {
   font-size:80%;

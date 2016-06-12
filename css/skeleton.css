@@ -169,13 +169,19 @@ h6 { font-size: 1.5rem; letter-spacing: 0; font-weight:700; }
 p {
   margin-top: 0; }
 
+/* light blue: d9e8ea;
+med blue: 6b7b7c;
+dark blue: 3a4e51;
+dark brown: 472e20;
+med brown: 725741;
+light brown: c39a86; */
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #3c2615; }
+  color: #3a4e51; }
 a:hover {
-  color: #232d35; }
+  color: #472e20; }
 
 
 /* Buttons
@@ -221,8 +227,8 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
-  background-color: #33C3F0;
-  border-color: #33C3F0; }
+  background-color: #3a4e51;
+  border-color: #3a4e51; }
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -234,8 +240,8 @@ input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
   color: #FFF;
-  background-color: #1EAEDB;
-  border-color: #1EAEDB; }
+  background-color: #6b7b7c;
+  border-color: #6b7b7c; }
 
 
 /* Forms
