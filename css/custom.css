@@ -3,8 +3,8 @@ light blue cee1e9 */
 
 html, body {
     height: 100%;
+    color:#1c1c24;
 }
-
 hr {
   margin:0 0 0.8em 0;
 }
@@ -23,12 +23,13 @@ hr {
   background-size:cover;
   background-position:center center;
 }
+.background-full, .background-third {
+  background-image:url('/img/bg/eso1424a-tiltshift4.jpg');
+}
 .background-full {
-  background-image:url('/img/bg/hs-2008-35-j-dark2.jpg');
   height:100%;
 }
 .background-third {
-  background-image:url('/img/bg/hs-2008-35-j-wide.jpg');
   min-height:130px;
   height:30%;
   margin-bottom:1em;
@@ -63,7 +64,7 @@ nav {
   display: flex;
   -webkit-justify-content:flex-end;
   justify-content:flex-end;
-  border-bottom:1px solid #fff;
+  border-bottom:1px solid rgba(255,255,255,0.6);
 }
 ul#menu {
   position:relative;
@@ -72,7 +73,6 @@ ul#menu {
   font-weight:300;
   margin:0;
   padding:0;
-  /*width:580px;*/
   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
   display: -ms-flexbox;      /* TWEENER - IE 10 */
@@ -81,24 +81,29 @@ ul#menu {
   -webkit-justify-content:space-between;
   justify-content:space-between;
 }
-nav a {
-  color: #e8dcd1;
+.banner {
+  text-shadow:0px 0px 7px rgba(0,0,0,0.7);
+}
+nav a, .banner a {
+  color: #c8d2ca;
   text-decoration: none;
 }
 .banner a {
-  color:#fff;
-  text-decoration: none;
   font-weight:400;
 }
 nav a:hover, .banner a:hover {
-  color: #d1e1e8; }
-
+  color: #c7b5b8;
+}
 .hangindent {
   padding-left: 1em;
   text-indent: -1em;
 } 
-
+i.fa {
+  margin:0;
+  padding:0;
+}
 div.contact {
+  text-align:center;
   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
   display: -ms-flexbox;      /* TWEENER - IE 10 */
