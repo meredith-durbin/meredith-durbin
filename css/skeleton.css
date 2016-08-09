@@ -169,19 +169,15 @@ h6 { font-size: 1.5rem; letter-spacing: 0; font-weight:700; }
 p {
   margin-top: 0; }
 
-/* light blue: d9e8ea;
-med blue: 6b7b7c;
-dark blue: 3a4e51;
-dark brown: 472e20;
-med brown: 725741;
-light brown: c39a86; */
+/* dark blue: 2a3248;
+dark pink: 583a3e; */
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #3a4e51; }
+  color: #344666; }
 a:hover {
-  color: #472e20; }
+  color: #9f4c53; }
 
 
 /* Buttons
@@ -227,8 +223,8 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
-  background-color: #3a4e51;
-  border-color: #3a4e51; }
+  background-color: #2a3248;
+  border-color: #2a3248; }
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -240,8 +236,8 @@ input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
   color: #FFF;
-  background-color: #6b7b7c;
-  border-color: #6b7b7c; }
+  background-color: #583a3e;
+  border-color: #583a3e; }
 
 
 /* Forms

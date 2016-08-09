@@ -24,7 +24,7 @@ hr {
   background-position:center center;
 }
 .background-full, .background-third {
-  background-image:url('/img/bg/eso1424a-tiltshift4.jpg');
+  background-image:url('/img/bg/eso1424a-tiltshift4_small.jpg');
 }
 .background-full {
   height:100%;
@@ -41,11 +41,13 @@ footer {
   bottom:0;
   left:0;
   margin:0;
-  background-color:rgba(255,255,255,0.6);
+  background-color:rgba(0,0,0,0.4);
+  border-top:1px solid rgba(255,255,255,0.6);
+  color:rgba(255,255,255,0.6);
   height:36px;
   line-height:35px;
   text-align:center;
-  margin-top:1px solid #222;
+  /*margin-top:1px solid #222;*/
 }
 footer small {
   width:100%;
@@ -56,7 +58,7 @@ nav {
   z-index:1000;
   margin:0;
   padding:0;
-  background-color:rgba(0, 0, 0, 0.4);
+  background-color:rgba(0,0,0,0.4);
   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
   display: -ms-flexbox;      /* TWEENER - IE 10 */
@@ -82,17 +84,22 @@ ul#menu {
   justify-content:space-between;
 }
 .banner {
-  text-shadow:0px 0px 7px rgba(0,0,0,0.7);
+  text-shadow:0px 0px 10px rgba(0,0,0,0.8);
 }
-nav a, .banner a {
-  color: #c8d2ca;
+nav a, .banner a, footer a {
+  color: #cce5e1;
   text-decoration: none;
 }
 .banner a {
   font-weight:400;
 }
-nav a:hover, .banner a:hover {
+nav a:hover, .banner a:hover, footer a:hover {
   color: #c7b5b8;
+}
+label.show-menu {
+  text-align:center;
+  font-weight:400;
+  margin-right:0;
 }
 .hangindent {
   padding-left: 1em;
@@ -103,6 +110,7 @@ i.fa {
   padding:0;
 }
 div.contact {
+  font-size:1.6em;
   text-align:center;
   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
@@ -204,6 +212,7 @@ input#show-menu{
   #menu li, #menu li a {
     width: 100%;
     background:#222;
+    margin-left:0;
   }
   #menu li a:last-child {
     margin-right:0;
@@ -250,9 +259,6 @@ input#show-menu{
   color:#fff;
   text-align:center;
   text-transform:lowercase;
-}
-
-.banner h1, .banner h3, .banner h5 {
   font-weight:300;
 }
 
