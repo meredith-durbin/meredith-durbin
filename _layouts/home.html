@@ -1,48 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Meredith J. Durbin"/>
-    <meta name="description" content="Meredith J. Durbin's homepage"/>
-    <meta name="keywords" content="Meredith,Durbin,STScI,WFC3,RIA"/>
-    <link rel="icon" href="{{ site.baseurl }}/img/favicon.png">
-    <title>{{ page.title }}</title>
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700,400italic' rel='stylesheet' type='text/css'>
-    <link href="{{ site.baseurl }}/css/normalize.css" rel="stylesheet">
-    <link href="{{ site.baseurl }}/css/skeleton.css" rel="stylesheet">
-    <link href="{{ site.baseurl }}/css/custom.css" rel="stylesheet">
-    <link href="{{ site.baseurl }}/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  </head>
-  <body>
+---
+layout: base
+---
 
-      <nav role="navigation">
-        <label for="show-menu" class="show-menu"><i class="fa fa-bars" aria-hidden="true"></i>&nbsp;&nbsp;Menu</label>
-        <input type="checkbox" id="show-menu" role="button">
-        <ul id="menu">
-          <li><a href="/"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;Home</a></li>
-          <li><a href="/research"><i class="fa fa-bar-chart" aria-hidden="true"></i>&nbsp;&nbsp;Research</a></li>
-          <li><a href="/cv"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;&nbsp;CV</a></li>
-          <li><a href="/projects"><i class="fa fa-folder-open" aria-hidden="true"></i>&nbsp;&nbsp;Projects</a></li>
-          <!-- <li><a href="/about"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;About</a></li> -->
-        </ul>
-      </nav>
+<nav role="navigation">
+  <label for="show-menu" class="show-menu"><i class="fa fa-bars" aria-hidden="true"></i>&nbsp;&nbsp;Menu</label>
+  <input type="checkbox" id="show-menu" role="button">
+  <ul id="menu">
+    <li><a href="/"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;Home</a></li>
+    <li><a href="/research"><i class="fa fa-bar-chart" aria-hidden="true"></i>&nbsp;&nbsp;Research</a></li>
+    <li><a href="/teaching"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;&nbsp;Teaching</a></li>
+    <li><a href="/cv"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;&nbsp;CV</a></li>
+    <li><a href="/projects"><i class="fa fa-folder-open" aria-hidden="true"></i>&nbsp;&nbsp;Projects</a></li>
+    <!-- <li><a href="/about"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;About</a></li> -->
+  </ul>
+</nav>
 
-        {{ content }}
+  {{ content }}
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-    <script src="{{ site.baseurl }}/js/scripts.js"></script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-54214308-1', 'auto');
-      ga('require', 'displayfeatures');
-      ga('send', 'pageview');
-
-   </script>
-  </body>
-</html>

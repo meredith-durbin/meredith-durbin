@@ -232,6 +232,11 @@ input#show-menu{
       text-align:right;
     }
 }
+.quote {
+  font-size:2rem;
+  font-weight:300;
+  font-style:italic;
+}
 
 .banner-center, .banner-bottom {
   position:relative;
@@ -245,6 +250,12 @@ input#show-menu{
   -webkit-justify-content:center;
   justify-content:center;
 }
+ul.indent {
+  margin-left:2rem;
+}
+p.spacing {
+  margin-bottom:2rem;
+}
 
 .banner-center {
   -webkit-align-items:center;
@@ -253,6 +264,10 @@ input#show-menu{
 .banner-bottom {
   -webkit-align-items:flex-end;
   align-items:flex-end;
+}
+.table-center {
+  float:none;
+  margin:2rem auto;
 }
 
 .banner {
