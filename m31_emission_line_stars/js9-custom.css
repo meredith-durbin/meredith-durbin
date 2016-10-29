@@ -38,9 +38,12 @@ table.JS9_wrapper {
 table.JS9_wrapper td {
     overflow:hidden;
 }
-/*.JS9Message {
+.JS9Message {
     display:none;
-}*/
+}
+#fullfield .JS9Message {
+    display:block;
+}
 .JS9Button {
     padding:3px 4px;
     margin:4px 2px;
