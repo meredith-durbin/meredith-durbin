@@ -33,10 +33,11 @@ div[class^="bk-plot"], .bk-root, table.JS9_wrapper {
 table.JS9_wrapper {
     padding:0 0 30px 0;
     margin:0 0 0 30px;
-    width:365px;
+    width:366px;
 }
 table.JS9_wrapper td {
     overflow:hidden;
+    max-width:122px;
 }
 .JS9Message {
     display:none;
@@ -55,9 +56,10 @@ input.rescale {
     text-align:right;
     color:#00FF00;
     position:absolute;
-    width:178px;
-    height:15px;
-    margin-top:-178px;
+    width:111px;
+    height:9px;
+    margin-top:-112px;
+    font-size:12px;
 }
 #starinfo {
     text-align:center;
