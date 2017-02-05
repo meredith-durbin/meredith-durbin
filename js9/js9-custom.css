@@ -1,0 +1,70 @@
+body, html {
+    font-family:Helvetica,Arial,sans-serif;
+    font-size:10pt;
+    width:100%;
+    margin:0;
+}
+.top-paragraph {
+    display:block;
+    position:relative;
+    width:900px;
+    margin:50px auto;
+}
+.bokeh-js9-container {
+    position:relative;
+    width:1150px;
+    max-width:1150px;
+    margin:0 auto 50px;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;
+    -webkit-justify-content:center;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+div[class^="bk-plot"], .bk-root, table.JS9_wrapper {
+    display:inline-block;
+}
+.bk-root, .bk-grid-column, .bk-layout-fixed {
+    margin:0;
+    padding:0;
+}
+table.JS9_wrapper {
+    position:absolute;
+    top:0;
+    padding:0 0 30px 0;
+    margin:-60px 0 0 -320px;
+    width:366px;
+}
+table.JS9_wrapper td {
+    overflow:hidden;
+    max-width:122px;
+}
+.JS9Message {
+    display:none;
+}
+#fullfield .JS9Message {
+    display:block;
+}
+.JS9Button {
+    padding:3px 4px;
+    margin:4px 2px;
+}
+input.rescale {
+    width:50px;
+}
+.filtertext {
+    text-align:right;
+    color:#00FF00;
+    position:absolute;
+    width:111px;
+    height:9px;
+    margin-top:-112px;
+    font-size:12px;
+}
+#starinfo {
+    text-align:center;
+    font-size:12pt;
+}
