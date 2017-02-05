@@ -8,12 +8,11 @@ body, html {
     display:block;
     position:relative;
     width:900px;
-    margin:50px auto;
+    margin:20px auto;
 }
 .bokeh-js9-container {
     position:relative;
-    width:1150px;
-    max-width:1150px;
+    width:1160px;
     margin:0 auto 50px;
     display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
     display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
@@ -22,7 +21,6 @@ body, html {
     display: flex;
     -webkit-justify-content:center;
     justify-content:center;
-    flex-wrap:wrap;
 }
 div[class^="bk-plot"], .bk-root, table.JS9_wrapper {
     display:inline-block;
@@ -30,12 +28,11 @@ div[class^="bk-plot"], .bk-root, table.JS9_wrapper {
 .bk-root, .bk-grid-column, .bk-layout-fixed {
     margin:0;
     padding:0;
+    max-width:780px;
 }
 table.JS9_wrapper {
-    position:absolute;
-    top:0;
     padding:0 0 30px 0;
-    margin:-60px 0 0 -320px;
+    margin:0 0 0 30px;
     width:366px;
 }
 table.JS9_wrapper td {
