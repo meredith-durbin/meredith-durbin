@@ -25,8 +25,6 @@ b {
   -moz-background-size:cover;
   background-size:cover;
   background-position:center center;
-}
-.background-full, .background-third {
   background-image:url('/img/bg/eso1424a-tiltshift4_small.jpg');
 }
 .background-full {
