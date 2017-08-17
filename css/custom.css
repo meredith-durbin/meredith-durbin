@@ -236,6 +236,12 @@ input#show-menu{
   font-style:italic;
 }
 
+.vcenter {
+   display:flex;
+   align-items:center;
+   justify-content:center;
+}
+
 .banner-center, .banner-bottom {
   position:relative;
   margin:0 auto;
@@ -253,6 +259,9 @@ ul.indent {
 }
 p.spacing {
   margin-bottom:2rem;
+}
+img.pad-left {
+  margin-left:2rem;
 }
 
 .banner-center {
