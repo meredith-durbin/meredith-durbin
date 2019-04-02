@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Meredith J. Durbin"/>
     <meta name="description" content="Meredith J. Durbin's homepage"/>
-    <meta name="keywords" content="Meredith,Durbin,Astronomy,Astrophysics,Washington,Graduate,Student,STScI,WFC3,RIA"/>
+    <meta name="keywords" content="Meredith,Durbin,Astronomy,Astrophysics,Washington,Graduate,Student"/>
     <link rel="icon" href="/img/favicon.png">
     <title>Research // Meredith J. Durbin</title>
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href="/css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700|Megrim:400" rel="stylesheet" type="text/css">
+<!--     <link href="/css/normalize.css" rel="stylesheet">
     <link href="/css/skeleton.css" rel="stylesheet">
+ -->    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link href="/css/custom.css" rel="stylesheet">
-    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body>
 
@@ -21,11 +22,11 @@
   <label for="show-menu" class="show-menu"><i class="fa fa-bars" aria-hidden="true"></i>&nbsp;&nbsp;Menu</label>
   <input type="checkbox" id="show-menu" role="button">
   <ul id="menu">
-    <li><a href="/"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;Home</a></li>
-    <li><a href="/research"><i class="fa fa-bar-chart" aria-hidden="true"></i>&nbsp;&nbsp;Research</a></li>
-    <li><a href="/teaching"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;&nbsp;Teaching</a></li>
-    <li><a href="/cv"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;&nbsp;CV</a></li>
-    <li><a href="/projects"><i class="fa fa-folder-open" aria-hidden="true"></i>&nbsp;&nbsp;Projects</a></li>
+    <li><a href="/"><i class="fas fa-home" aria-hidden="true"></i>&nbsp;&nbsp;Home</a></li>
+    <li><a href="/research"><i class="fas fa-chart-bar" aria-hidden="true"></i>&nbsp;&nbsp;Research</a></li>
+    <li><a href="/teaching"><i class="fas fa-university" aria-hidden="true"></i>&nbsp;&nbsp;Teaching</a></li>
+    <li><a href="/cv"><i class="fas fa-graduation-cap" aria-hidden="true"></i>&nbsp;&nbsp;CV</a></li>
+    <!-- <li><a href="/contact"><i class="fas fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;Contact</a></li> -->
     <!-- <li><a href="/about"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;About</a></li> -->
   </ul>
 </nav>
@@ -43,6 +44,17 @@
       <h5 class="center">Current Work</h5>
     </div>
   </div>
+  <div class="row u-cf" id="trgb">
+    <div class="five columns center u-pull-left">
+      <img src="/img/projects/trgb.jpg" class="u-max-full-width" alt="TRGB">
+      <p class="small">A demonstration of TRGB edge detection.</p>
+    </div>
+    <div class="seven columns u-pull-right">
+      <h6>A Recalibration of the Near-Infrared Tip of the Red Giant Branch</h6>
+      <p>The tip of the red giant branch (TRGB) is a powerful distance indicator that will bridge the gap between local geometric parallaxes and the low-velocity Hubble flow in the JWST era. However, the slope and absolute magnitude of the TRGB has not been robustly calibrated in the near-infrared. To this end, I am reanalyzing a set of archival HST ACS/WFC and WFC3/IR imaging of 23 nearby dwarf and spiral galaxies to produce a calibration of the TRGB across a range of metallicities, colors, and star-formation histories.</p>
+    </div>
+  </div>
+  <hr>
   <div class="row" id="emission_line_stars">
     <div class="seven columns">
       <h6>Emission Line Stars in M31</h6>
@@ -57,7 +69,7 @@
   <div class="row u-cf" id="wfirst">
     <div class="eight columns u-pull-right">
       <h6>Stellar Halos with WFIRST</h6>
-      <p>WFIRST will represent a giant leap forward for characterization of the stellar component of galaxy halos in the Local Volume; halo studies require a combination of depth and wide-field coverage that WFIRST/WFI will be able to deliver like no other instrument. I work with Dr. Ben Williams and the <a href="https://faculty.washington.edu/benw1/WFIRST/" target="_blank">WINGS</a> Science Investigation Team to quantify WFIRST's ability to accurately measure the star-formation histories of different halo populations and recover their ages and metallicities, and thus to optimize future observing strategies. I presented a <a href="http://www.stsci.edu/~dlaw/WFIRST2020s/posters/durbin_wfirst.pdf" target="_blank">poster</a> with accompanying <a href="/wfirst-halo-notebooks/">Jupyter notebooks</a> on this at the <em>Astronomy in the 2020s: Synergies with WFIRST</em> meeting in June 2017.</p>
+      <p>The study of resolved stars in galaxy halos requires a combination of photometric depth, angular resolution, and wide-field coverage that WFIRST/WFI will be able to deliver like no other instrument. I work with Dr. Ben Williams and the <a href="https://faculty.washington.edu/benw1/WFIRST/" target="_blank">WINGS</a> Science Investigation Team to quantify WFIRST's ability to accurately measure the star-formation histories of halo populations and recover their ages and metallicities, and thus to optimize future observing strategies. I presented a <a href="http://www.stsci.edu/~dlaw/WFIRST2020s/posters/durbin_wfirst.pdf" target="_blank">poster</a> with accompanying <a href="/wfirst-halo-notebooks/">Jupyter notebooks</a> on this at the <em>Astronomy in the 2020s: Synergies with WFIRST</em> meeting in June 2017.</p>
     </div>
     <div class="four columns center u-pull-left" style="margin-left:0;padding-left:0;">
       <img src="/img/projects/wfi_footprint.jpg" class="u-max-full-width" alt="NGC 4631 & NGC 4656 with WFI footprint superimposed">
@@ -70,10 +82,6 @@
         <h6>Science, Technology, & Society</h6>
         <p>I am part of the third cohort of the University of Washington's <a href="http://depts.washington.edu/stsst/about.php" target="_blank">Science, Technology, and Society Studies Certificate Program</a>. I believe that an understanding of how STEM fields operate in relation to social power structures is a critical aspect of being a responsible scientist. I'm particularly interested in the epistemology of "big data", constructions of objectivity, and rhetorics of observation, exploration, and colonization in astronomy.</p>
     </div>
-    <!-- <div class="five columns center">
-      <img src="/img/projects/mars.jpg" class="u-max-full-width" alt="NASA Mars recruitment posters">
-      <p class="small">NASA recruitment posters for jobs on Mars. How do these reproduce colonial ideology?</p>
-    </div> -->
   </div>
   <hr>
   <div class="row">
@@ -105,18 +113,5 @@
 
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-    <script src="/js/scripts.js"></script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-54214308-1', 'auto');
-      ga('require', 'displayfeatures');
-      ga('send', 'pageview');
-
-   </script>
   </body>
 </html>

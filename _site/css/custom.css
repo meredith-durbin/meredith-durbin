@@ -11,6 +11,9 @@ hr {
 b {
   font-weight:700;
 }
+em, i {
+  text-transform:italic;
+}
 .center {
   text-align:center;
 }
@@ -26,7 +29,7 @@ b {
   -moz-background-size:cover;
   background-size:cover;
   background-position:center center;
-  background-image:url('/img/bg/eso1424a-tiltshift4_small.jpg');
+  background-image:url('/img/bg/bg_trees.jpg');
 }
 .background-full {
   height:100%;
@@ -43,8 +46,9 @@ footer {
   bottom:0;
   left:0;
   margin:0;
+  margin-bottom:1px;
   background-color:rgba(0,0,0,0.4);
-  border-top:1px solid rgba(255,255,255,0.6);
+  border-top:2px solid rgba(0,0,0,0.2);
   color:rgba(255,255,255,0.6);
   height:36px;
   line-height:35px;
@@ -68,13 +72,13 @@ nav {
   display: flex;
   -webkit-justify-content:flex-end;
   justify-content:flex-end;
-  border-bottom:1px solid rgba(255,255,255,0.6);
+  border-bottom:2px solid rgba(0,0,0,0.2);
 }
 ul#menu {
   position:relative;
   list-style-type:none;
   text-transform:uppercase;
-  font-weight:300;
+  font-weight:200;
   margin:0;
   padding:0;
   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
@@ -191,6 +195,11 @@ input#show-menu{
     display: none;
 }
 
+img.profile {
+  border-radius:100%;
+  margin-bottom:1em;
+}
+
 /*Responsive Styles*/
 
 @media (max-width : 549px){
@@ -223,17 +232,24 @@ input#show-menu{
   input#show-menu:checked ~ #menu{
       display: inline-block;
   }
+  img.profile {
+    max-width:60%;
+  }
 }
 
 @media (min-width:550px) {
-    .right {
-      text-align:right;
-    }
+  .right {
+    text-align:right;
+  }
+  img.profile {
+    max-width:180px;
+  }
 }
 .quote {
+  font-family: 'Megrim', serif;  
   font-size:2rem;
   font-weight:300;
-  font-style:italic;
+  /*font-style:italic;*/
 }
 
 .vcenter {
@@ -254,6 +270,7 @@ input#show-menu{
   -webkit-justify-content:center;
   justify-content:center;
 }
+
 ul.indent {
   margin-left:2rem;
 }
@@ -280,10 +297,11 @@ img.pad-left {
 .banner {
   color:#fff;
   text-align:center;
-  text-transform:lowercase;
-  font-weight:300;
+  text-transform:lowercase; 
+  font-family: 'Megrim', serif;
+  /* font-weight:300; */
 }
-
+/*
 .banner h1 {
   letter-spacing:0.05em;
-}
+}*/
