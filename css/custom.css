@@ -128,13 +128,15 @@ div.contact i {
 input#show-menu{
     display: none;
 }
-
 .profile-img {
   overflow:hidden;
   width:100%;
   height:0;
   background: url("/img/me/hyperwall.jpg") no-repeat; 
   margin-bottom:1em;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 @media (max-width : 749px) {
@@ -146,7 +148,7 @@ input#show-menu{
 }@media (min-width : 750px) {
   .profile-img {
     max-width:960px;
-    padding-bottom:60%;
+    padding-bottom:59%;
     margin-bottom:1em;
     background-position:bottom center;
   }
