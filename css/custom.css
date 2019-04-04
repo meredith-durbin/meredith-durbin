@@ -131,7 +131,6 @@ input#show-menu{
 .profile-img {
   overflow:hidden;
   width:100%;
-  height:0;
   background: url("/img/me/hyperwall.jpg") no-repeat; 
   margin-bottom:1em;
   -webkit-background-size: cover;
@@ -143,11 +142,12 @@ input#show-menu{
   .profile-img {
     height:350px;
     padding-bottom:0;
-    background-position:33% 0%;
+    background-position:30% 100%;
   }
 }@media (min-width : 750px) {
   .profile-img {
     max-width:960px;
+    height:0;
     padding-bottom:59%;
     margin-bottom:1em;
     background-position:bottom center;
