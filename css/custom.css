@@ -1,9 +1,6 @@
-/* dark blue 31383c
-light blue cee1e9 */
-
 html, body {
-    height: 100%;
-    color:#1c1c24;
+  width:100%;
+  height: 100%;
 }
 hr {
   margin:0 0 0.8em 0;
@@ -17,54 +14,13 @@ em, i {
 .center {
   text-align:center;
 }
-.background-full, .background-third {
+nav {
   position:relative;
   top:0;
-  width:100%;
-  margin:0;
-  padding:0;
-  background-color:#000000;
-  background-repeat:no-repeat;
-  -webkit-background-size:cover;
-  -moz-background-size:cover;
-  background-size:cover;
-  background-position:center center;
-  background-image:url('/img/bg/bg_trees.jpg');
-}
-.background-full {
-  height:100%;
-}
-.background-third {
-  min-height:130px;
-  height:30%;
-  margin-bottom:1em;
-}
-footer {
-  width:100%;
-  min-width:0;
-  position:absolute;
-  bottom:0;
-  left:0;
-  margin:0;
-  margin-bottom:1px;
-  background-color:rgba(0,0,0,0.4);
-  border-top:2px solid rgba(0,0,0,0.2);
-  color:rgba(255,255,255,0.6);
-  height:36px;
-  line-height:35px;
-  text-align:center;
-  /*margin-top:1px solid #222;*/
-}
-footer small {
-  width:100%;
-}
-nav {
-  position:absolute;
   width:100%;
   z-index:1000;
   margin:0;
   padding:0;
-  background-color:rgba(0,0,0,0.4);
   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
   display: -ms-flexbox;      /* TWEENER - IE 10 */
@@ -72,13 +28,13 @@ nav {
   display: flex;
   -webkit-justify-content:flex-end;
   justify-content:flex-end;
-  border-bottom:2px solid rgba(0,0,0,0.2);
+  border-bottom:1px solid rgba(0,0,0,0.5);
+  margin-bottom:1em;
 }
 ul#menu {
   position:relative;
   list-style-type:none;
   text-transform:uppercase;
-  font-weight:200;
   margin:0;
   padding:0;
   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
@@ -89,29 +45,15 @@ ul#menu {
   -webkit-justify-content:space-between;
   justify-content:space-between;
 }
-.banner {
-  text-shadow:0px 0px 10px rgba(0,0,0,0.8);
-}
-nav a, .banner a, footer a {
-  color: #cce5e1;
-  text-decoration: none;
-}
-.banner a {
-  font-weight:400;
-}
-nav a:hover, .banner a:hover, footer a:hover {
-  color: #c7b5b8;
-}
 label.show-menu {
   text-align:center;
-  font-weight:400;
   margin-right:0;
 }
 .hangindent {
   padding-left: 1em;
   text-indent: -1em;
 } 
-i.fa {
+i.fas, i.far {
   margin:0;
   padding:0;
 }
@@ -176,7 +118,7 @@ div.contact a {
   display:inline-block;
   text-decoration: none;
   text-align: center;
-  margin:10px;
+  margin:1em;
 }
 
 /*Style 'show menu' label button and hide it by default*/
@@ -187,7 +129,6 @@ div.contact a {
   margin-right:20px;
   display: none;
   text-transform:uppercase;
-  color:#fff;
 }
 
 /*Hide checkbox*/
@@ -195,9 +136,8 @@ input#show-menu{
     display: none;
 }
 
-img.profile {
-  border-radius:100%;
-  margin-bottom:1em;
+img {
+  max-width:100%;
 }
 
 /*Responsive Styles*/
@@ -218,7 +158,7 @@ img.profile {
   /*Make all menu links full width*/
   #menu li, #menu li a {
     width: 100%;
-    background:#222;
+    background:#fff;
     margin-left:0;
   }
   #menu li a:last-child {
@@ -232,36 +172,18 @@ img.profile {
   input#show-menu:checked ~ #menu{
       display: inline-block;
   }
-  img.profile {
-    max-width:60%;
-  }
 }
-
-@media (min-width:550px) {
-  .right {
-    text-align:right;
-  }
-  img.profile {
-    max-width:180px;
-  }
+.right {
+  text-align:right;
 }
-.quote {
-  font-family: 'Megrim', serif;  
-  font-size:2rem;
-  font-weight:300;
-  /*font-style:italic;*/
-}
-
 .vcenter {
    display:flex;
    align-items:center;
    justify-content:center;
 }
-
-.banner-center, .banner-bottom {
+.banner-center {
   position:relative;
   margin:0 auto;
-  height:100%;
   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
   display: -ms-flexbox;      /* TWEENER - IE 10 */
@@ -269,6 +191,8 @@ img.profile {
   display:flex;
   -webkit-justify-content:center;
   justify-content:center;
+  -webkit-align-items:center;
+  align-items:center;
 }
 
 ul.indent {
@@ -280,11 +204,6 @@ p.spacing {
 img.pad-left {
   margin-left:2rem;
 }
-
-.banner-center {
-  -webkit-align-items:center;
-  align-items:center;
-}
 .banner-bottom {
   -webkit-align-items:flex-end;
   align-items:flex-end;
@@ -293,15 +212,8 @@ img.pad-left {
   float:none;
   margin:2rem auto;
 }
-
 .banner {
-  color:#fff;
   text-align:center;
   text-transform:lowercase; 
   font-family: 'Megrim', serif;
-  /* font-weight:300; */
 }
-/*
-.banner h1 {
-  letter-spacing:0.05em;
-}*/
