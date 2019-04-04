@@ -6,31 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="author" content="Meredith J. Durbin"/>
     <meta name="description" content="Meredith J. Durbin's homepage"/>
-    <meta name="keywords" content="Meredith,Durbin,Astronomy,Astrophysics,Washington,Graduate,Student"/>
+    <meta name="keywords" content="Meredith,Durbin,Astronomy,Astrophysics,Physics,Washington,University of Washington,Seattle,Graduate,Student"/>
 
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:url" content="{{ site.url }}" >
+
+    {% if page.summary %}
+    <meta name="twitter:description" content="{{ page.summary }}">
+    <meta property="og:description" content="{{ page.summary }}" />
+    {% else %}
+    <meta name="twitter:description" content="Meredith J. Durbin's homepage">
+    <meta property="og:description" content="Meredith J. Durbin's homepage" />
+    {% endif %}
+
+    {% if page.image %}
+    <meta name="twitter:card"  content="summary_large_image">
+    <meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
+    <meta property="og:image" content="{{ site.url }}{{ page.image }}" />
+    <meta property="og:image:alt" content="{{ page.image_alt }}" />
+    {% else %}
+    <meta name="twitter:card"  content="summary">
+    <meta name="twitter:image" content="{{ site.url }}/img/me/pineapple.jpg">
+    <meta property="og:image" content="{{ site.url }}/img/me/pineapple.jpg" />
+    <meta property="og:image:alt" content="Meredith holding a pineapple made of skulls" />
+    {% endif %}
+
     <meta name="twitter:site" content="@bispectral" />
     <meta name="twitter:creator" content="@bispectral" />
     <meta name="twitter:title" content="{{ page.title }}" />
-    <meta name="twitter:description" content="Meredith Durbin's website" />
-    <meta name="twitter:image" content="{{ site.baseurl }}/img/me/pineapple.jpg" />
-    <meta name="twitter:image:alt" content="Me talking about space" />
-    
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="{{ page.title }}" />
-    <meta property="og:url" content="https://meredith-durbin.github.io/" >
-    <meta property="og:description" content="Meredith Durbin's website" />
-    <meta property="og:image" content="{{ site.baseurl }}/img/me/pineapple.jpg" />
-    <meta property="og:image:type" content="image/jpeg" />
-    <meta property="og:image:alt" content="Me talking about space" />
 
-    <link rel="icon" href="{{ site.baseurl }}/img/favicon.png">
+    <link rel="icon" href="{{ site.url }}/img/favicon.png">
     <title>{{ page.title }}</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700|Megrim:400" rel="stylesheet" type="text/css">
-    <link href="{{ site.baseurl }}/css/normalize.css" rel="stylesheet">
-    <link href="{{ site.baseurl }}/css/skeleton.css" rel="stylesheet">
+    <link href="{{ site.url }}/css/normalize.css" rel="stylesheet">
+    <link href="{{ site.url }}/css/skeleton.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-    <link href="{{ site.baseurl }}/css/custom.css" rel="stylesheet">
+    <link href="{{ site.url }}/css/custom.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
