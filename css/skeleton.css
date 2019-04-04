@@ -168,13 +168,10 @@ h6 { font-size: 1.6rem; line-height: 1.2;  letter-spacing: -.02rem; font-weight:
 p {
   margin-top:0rem; }
 
-/* dark blue: 2a3248;
-dark pink: 583a3e; */
-
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #333366;
+  color: #003366;
 }
 a:hover {
   color: #cc9933;

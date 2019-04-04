@@ -67,6 +67,7 @@ div.contact {
   justify-content:center;
 }
 div.contact a {
+  text-decoration:none;
   margin:0 0.5em;
 }
 .small {
