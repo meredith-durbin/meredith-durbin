@@ -1,0 +1,111 @@
+---
+layout: base
+title: M31 & M33 data products
+---
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+
+<div class="row">
+    <div class="banner twelve columns">
+        <h3>M31 & M33 data products</h3>
+    </div>
+</div>
+<div class="row">
+    <div class="twelve columns">
+        <table id="data" class="display">
+            <thead>
+                <tr>
+                    <th>Data product description</th>
+                    <th>Contributor(s)</th>
+                    <th>Link(s)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HST photometry and mosaics</td>
+                    <td>Julianne Dalcanton, Ben Williams, Meredith Durbin</td>
+                    <td><a href="https://drive.google.com/drive/u/1/folders/1e5pxzFnn9rLWwo9TWN-nSkK20MyjL1ks" target="_blank">Google drive</a></td>
+                </tr>
+                <tr>
+                    <td>BEAST SED-fitting software</td>
+                    <td>Karl Gordon</td>
+                    <td><a href="https://github.com/beast-fitting/beast" target="_blank">Github</a> / 
+                        <a href="https://beast.readthedocs.io/en/latest/" target="_blank">Readthedocs</a> / 
+                        <a href="https://iopscience.iop.org/article/10.3847/0004-637X/826/2/104/meta" target="_blank">IOP</a> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>PHAT dataset on NOAO Datalab</td>
+                    <td>Knut Olsen</td>
+                    <td><a href="https://datalab.noao.edu/phat/index.php" target="_blank">Overview</a> / 
+                        <a href="https://datalab.noao.edu/phat/analysis/M31WithPhat_20180103.html" target="_blank">Example notebook</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>VLA HI M33 data</td>
+                    <td>Eric Koch</td>
+                    <td><a href="https://doi.org/10.11570/18.0003" target="_blank">Data release</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>M31 MaNGA data</td>
+                    <td>Nell Byler</td>
+                    <td><a href="https://drive.google.com/drive/folders/1rALwZL01qjfvmQNc6vGO-6Lvf6Y4WcDg" target="_blank">Google drive</a> / 
+                        <a href="https://sites.google.com/view/m31-manga/home" target="_blank">Website</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>PHAT dust maps</td>
+                    <td>Julianne Dalcanton</td>
+                    <td><a href="http://faculty.washington.edu/jdal/phat_dust_maps.tar" target="_blank">Tar file</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Medium-band WFC3/IR M31 data</td>
+                    <td>Martha Boyer</td>
+                    <td><a href="https://stsci.app.box.com/s/93x4ckywzbgc0ailq3p8y2k9nm1wnpgj" target="_blank">STScI Box</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>CARMA CO data</td>
+                    <td>Andreas Schruba</td>
+                    <td><a href="m31_carma_readme.txt" target="_blank">README</a> / 
+                    <a href="http://www.mpe.mpg.de/~schruba/tmp/m31_carma_sigmask.tgz" target="_blank">SNR-masked tar file</a> / 
+                    <a href="http://www.mpe.mpg.de/~schruba/tmp/m31_carma_velmask.tgz" target="_blank">Velocity-masked tar file</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>M31 star-formation histories</td>
+                    <td>Alexia Lewis</td>
+                    <td><a href="https://www.dropbox.com/sh/6pfwmzgalabjnsz/AADM4aaIdhNB6wxh_aQPvy2wa?dl=0" target="_blank">Spatial maps (Dropbox)</a> / 
+                    <a href="https://www.dropbox.com/s/mq9nr28y31x4sq9/phat_sfhs.tar.gz?dl=0" target="_blank">Individual SFHs (Dropbox)</a> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>Original M31 BEAST fits</td>
+                    <td>Karl Gordon</td>
+                    <td><a href="https://stsci.box.com/v/phatbeast" target="_blank">Catalogs (Box)</a> / 
+                    <a href="https://stsci.box.com/v/BEAST-PHAT-Spatial" target="_blank">Spatially reordered files (Box)</a> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>UNWISE M31 & M33 maps</td>
+                    <td>Dustin Lang</td>
+                    <td><a href="http://portal.nersc.gov/project/cosmo/temp/dstn/unwise/m31/" target="_blank">M31</a> /
+                        <a href="http://portal.nersc.gov/project/cosmo/temp/dstn/unwise/m33/" target="_blank">M33</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+
+<script type="text/javascript">
+$(document).ready( function () {
+    $('#data').DataTable( {
+        paging: false
+    } );
+} );
+</script>
